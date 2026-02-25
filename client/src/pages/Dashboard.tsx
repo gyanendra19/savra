@@ -15,13 +15,15 @@ const Dashboard: React.FC = () => {
   }, []);
 
   const fetchOverview = async () => {
-    const res = await fetch("http://localhost:5000/dashboard/overview");
+    const res = await fetch(
+      "https://savra-8c8f.onrender.com/dashboard/overview",
+    );
     const data = await res.json();
     setOverview(data);
   };
 
   const fetchWeekly = async () => {
-    const res = await fetch("http://localhost:5000/dashboard/weekly");
+    const res = await fetch("https://savra-8c8f.onrender.com/dashboard/weekly");
     const data = await res.json();
     setWeekly(data);
   };
