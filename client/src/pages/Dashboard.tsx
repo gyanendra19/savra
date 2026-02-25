@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import StatCard from "../components/statCard";
+import StatCard from "../components/StatCard";
 import WeeklyChart from "../components/WeeklyTrend";
 import TeacherSelector from "../components/TeacherSelector";
 import type { TeacherStats, WeeklyTrend } from "../types";
